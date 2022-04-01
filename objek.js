@@ -1,5 +1,6 @@
 let orang = {
-  nama: 'fajar',
+  nama: 'Fajar',
+  'alamat': 'Tasikmalaya',
   umur: 16,
   sebuahFungsi: function() {
     console.info('terbang')
@@ -12,6 +13,11 @@ console.info(orang.nama)
 console.info(orang.umur)
 orang.sebuahFungsi()
 orang.sebuahFungsi = function(samting) {
-  console.info(`${this.nama} ${this.umur} tahun random ${samting}`)
+  console.info(`${this.nama} ${this.umur} dari ${samting}`)
 }
-orang.sebuahFungsi(23)
+orang.sebuahFungsi(orang.alamat)
+console.table(orang)
+
+for(data in orang){
+  console.info(data)
+}
