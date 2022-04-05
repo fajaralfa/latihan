@@ -3,3 +3,4 @@ function printo(string) {
 }
 let anjay = 'fajar'
 printo(`halo ${anjay}\n`)
+
